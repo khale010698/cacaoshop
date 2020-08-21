@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Cacao Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <header class="pt-2 pb-3 mt-4">
+    <div class="row m-0">
+      <div class="col-12 pl-4 pr-4 d-flex justify-content-between">
+        <div class="d-flex align-items-center" id="logoBackToHome"><img src="./assets/img/logo_light.png" alt=""></div>
+        <div class="d-flex align-items-center justify-content-end" style="margin-top: -0.5rem;">
+          <img src="./assets/img/heart.png" alt="" style="margin-top: 0.25rem;" id="btnFavoriteHeader">
+          <img src="./assets/img/cart.png" alt="" style="margin: 0 0 0 0.5rem;" id="btnCartHeader">
+          <img src="./assets/img/menu.png" alt="" style="margin: 0.5rem 0 0 -0.5rem;" id="btnToggleSidebar">
+        </div>
+      </div>
+      <div class="col-12 pl-4 pr-4 d-flex justify-content-center">
+        <input type="text" id="search" class="font-12" placeholder="tìm kiêm...">
+      </div>
+    </div>
+    <div class="row m-0 p-0" id="sidebar">
+      <div class="col-12 p-0" style="border-bottom: 1px solid #cecece;">
+        <div class="d-flex justify-content-between menu-item" aria-expanded=false data-toggle="collapse" data-target="#productSidebar">
+          <span class="font-bold-18 text-sidebar">SẢN PHẨM</span>
+          <span class="font-bold-18 text-sidebar">
+            <img src="./assets/img/narrow.png" alt="">
+          </span>
+        </div>
+        <div id="productSidebar" class="mt-2 mb-5 collapse">
+          <span class="d-inline-flex w-100 pl-5 ml-1 mt-4" id="btnBotCacao">BỘT CACAO</span>
+          <span class="d-inline-flex w-100 pl-5 ml-1 mt-4">NGUYÊN LIỆU TỪ CACAO</span>
+          <span class="d-inline-flex w-100 pl-5 ml-1 mt-4">SẢN PHẨM KHÁC</span>
+          <span class="d-inline-flex w-100 pl-5 ml-1 mt-4">SẢN PHẨM BÁN CHẠY</span>
+        </div>
+      </div>
+      <div class="col-12 p-0" style="border-bottom: 1px solid #cecece;">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar" id="aboutUsMenu">VỀ CHÚNG TÔI</span>
+        </div>
+      </div>
+      <div class="col-12 p-0" style="border-bottom: 1px solid #cecece;">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar" id="newsMenu">TIN TỨC</span>
+        </div>
+      </div>
+      <div class="col-12 p-0" style="border-bottom: 1px solid #cecece;">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar" id="contactMenu">LIÊN HỆ</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+      <div class="col-12 p-0">
+        <div class="d-flex justify-content-between menu-item">
+          <span class="font-bold-18 text-sidebar">&emsp;</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main style="overflow-x: hidden;">
+    <!-- Overview Section -->
+    <section class="w-100 row m-0">
+      <div class="col-12 pr-4 pl-4">
+        <div id="orderForm">
+          <p class="w-100 text-sidebar font-bold-12" style="margin-top: 2rem;">THÔNG TIN GIAO HÀNG</p>
+          <input type="text" placeholder="Họ và tên" class="w-100 font-12 lh-16" style="margin-top: 0;" />
+          <input type="text" placeholder="Số điện thoại" class="w-100 font-12 lh-16" />
+          <input type="text" placeholder="Email" class="w-100 font-12 lh-16" />
+          <input type="text" placeholder="Địa chỉ" class="w-100 font-12 lh-16" />
+          <span class="d-inline-block text-sidebar font-bold-12" style="margin-top: 1rem;">GHI CHÚ ĐƠN HÀNG</span>
+          <textarea type="text" placeholder="..." class="w-100 font-12 lh-16" rows="4"></textarea>
+          <span class="d-inline-block text-sidebar font-bold-12" style="margin-top: 1rem;">PHƯƠNG THỨC THANH TOÁN</span>
+          <div class="radio-group">
+            <label class="container font-12 lh-16">Thanh toán khi giao hàng (COD)
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container font-12 lh-16">Chuyển khoản ngân hàng
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <span class="d-inline-block text-sidebar font-bold-12" style="margin-top: 1rem;">PHƯƠNG THỨC THANH TOÁN</span>
+          <div class="p-3" style="background-color: #fff;">
+            <span class="d-inline-block w-100 font-12 lh-18 text-brown"><b>- TP.HCM:</b> với đơn hàng trên 300.000đ</span>
+            <span class="d-inline-block w-100 font-12 lh-18 text-brown" style="margin-top: -0.75rem;"><b>- Hà Nội:</b> với đơn hàng trên 300.000đ</span>
+          </div>
+
+          <span class="d-inline-block text-sidebar font-bold-12" style="margin-top: 1rem;">ĐƠN HÀNG</span>
+          <div class="row w-100 m-0 justify-content-center">
+            <div class="col-4" style="border-bottom: 1.5px solid #cecece; position: relative; background-color: #fff;">
+              <div style="border-radius: 50%; background-color: #A05C2D; width: 80px; height: 80px; position: absolute; left: 1.3rem;top: 1.25rem;"></div>
+              <img src="./assets/img/product1.png" alt="" style="position: absolute; left: 1.75rem;top: -0.75rem;transform: scale(1);">
+            </div>
+            <div class="col-8" style="border-bottom: 1.5px solid #cecece; padding: 1rem; background-color: #fff;">
+              <p class="font-bold-12 lh-18 text-brown">BỘT CACAO NGUYÊN CHẤT</p>
+              <p class="font-12 lh-18" style="color: #a0a0a0; margin-top: -1rem; margin-bottom: 1.5rem;">TÚI 200G</p>
+              <div class="w-100 d-flex justify-content-start">
+                <span class="d-inline-block font-bold-12 text-brown lh-18">số lượng:</span>&ensp;
+                <span class="d-inline-block font-12 lh-18 text-brown">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 w-100">
+            <div class="col-12 d-flex justify-content-between pt-2 pb-2" style="background-color: #fff;margin: 1rem 0;border-bottom: 1.5px solid #cecece; ">
+            <span class="font-bold-12 lh-26 text-brown">Tổng cộng:</span>
+            <span class="font-bold-12 lh-26" style="background-color: #fff;color: #F6B14C;">480.000đ</span>
+            </div>
+          </div>
+          <div class="row w-100 d-flex justify-content-center" style="padding: 0 1.5rem;margin: 1.5erm 0;">
+            <button class="btn-main font-bold-18 lh-26 text-white" style="background-color: #F6B14C; width: 10rem;" id="btnOrder">ĐẶT HÀNG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row m-0 pt-4 pb-0 pr-3 pl-3">
+        <div class="col-6 p-0">
+          <img src="./assets/img/logo.png" alt="">
+          <div class="mt-5 font-12">
+            <b>LIÊN HỆ</b><br/> <br/>
+            <b>Hotline:</b><br/>
+            0907 670 339 <br/>
+            <b>Hotline:</b><br/>
+             www.cacaomi.vn www.cacaomi.com <br/>
+            <b>Email:</b><br/> botcacaomi@gmail.com
+          </div>
+        </div>
+        <div class="col-6 m-0 pl-3">
+          <div class="font-12" style="margin-top: 0.5rem;">
+            <b>ABOUT</b><br/> <br/>
+            về chúng tôi <br/>
+            góc chia sẻ<br/>
+            cacaomi<br/>
+            cửa hàng <br/><br/>
+            <b>ABOUT</b><br/> <br/>
+            bảo mật thông tin <br/>
+            quy trình xử lý<br/>
+            thanh toán, giao hàng<br/>
+            chính sách đổi trả
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="application/javascript" src="./assets/js/jquery.js"></script>
+  <script type="application/javascript" src="./assets/js/bootstrap.js"></script>
+  <script type="application/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
