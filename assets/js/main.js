@@ -22,8 +22,8 @@ const MAIN = {
 $("#btnToggleSidebar").click(function () {
   MAIN.COMMON.toggleSidebar(this);
 });
-// var prefix = "/cacao-shop";
-var prefix = "";
+var prefix = "/cacaoshop";
+//var prefix = "";
 $('#btnBackToHomeFavorite').click(function () {MAIN.COMMON.redirect(prefix + '/index.html');});
 $('#logoBackToHome').click(function () {MAIN.COMMON.redirect(prefix + '/index.html');});
 $('#btnBackToHomeSuccess').click(function () {MAIN.COMMON.redirect(prefix + '/index.html');});
